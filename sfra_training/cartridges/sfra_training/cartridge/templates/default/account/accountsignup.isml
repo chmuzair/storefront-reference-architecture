@@ -1,0 +1,91 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/account1.css');
+        assets.addJs('/js/account1.js');
+    </isscript>
+
+    <div class="row justify-content-center equeal-height">
+        <div class="col-sm-8 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="login-form-nav">
+                        <form action="${pdict.actionUrl}" method="POST" class="profile-form" <isprint
+                            value="${pdict.profileForm.attributes}" encoding="off" />>
+                        <div class="form-group required">
+                            <label class="form-control-label">
+                                <isprint value="${pdict.profileForm.fname.label}" encoding="htmlcontent" />
+                            </label>
+                            <input type="input" class="form-control" id="profile-form-fname" <isprint
+                                value="${pdict.profileForm.fname.attributes}" encoding="off" />>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="form-control-label">
+                                <isprint value="${pdict.profileForm.lname.label}" encoding="htmlcontent" />
+                            </label>
+                            <input type="input" class="form-control" id="profile-form-lname" <isprint
+                                value="${pdict.profileForm.lname.attributes}" encoding="off" />>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="form-control-label">
+                                <isprint value="${pdict.profileForm.email.label}" encoding="htmlcontent" />
+                            </label>
+                            <input type="email" class="form-control" id="profile-form-email" <isprint
+                                value="${pdict.profileForm.email.attributes}" encoding="off" />>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="form-control-label">
+                                <isprint value="${pdict.profileForm.emailconfirm.label}" encoding="htmlcontent" />
+                            </label>
+                            <input type="email" class="form-control" id="profile-form-emailconfirm" <isprint
+                                value="${pdict.profileForm.emailconfirm.attributes}" encoding="off" />>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group required">
+                            <label class="form-control-label">
+                                <isprint value="${pdict.profileForm.phone.label}" encoding="htmlcontent" />
+                            </label>
+                            <input type="input" class="form-control" id="profile-form-phone" <isprint
+                                value="${pdict.profileForm.phone.attributes}" encoding="off" />>
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label class="form-control-label">
+                                <isprint value="${pdict.profileForm.password.label}" encoding="htmlcontent" />
+                            </label>
+                            <input type="input" class="form-control" id="profile-form-password" <isprint
+                                value="${pdict.profileForm.password.attributes}" encoding="off" />>
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label class="form-control-label">
+                                <isprint value="${pdict.profileForm.passwordconfirm.label}" encoding="htmlcontent" />
+                            </label>
+                            <input type="input" class="form-control" id="profile-form-passwordconfirm" <isprint
+                                value="${pdict.profileForm.passwordconfirm.attributes}" encoding="off" />>
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+                        <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />
+                        <button type="submit"
+                            class="btn btn-block btn-primary">${Resource.msg('button.createaccount.registration', 'registration', null)}</button>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</isdecorate>

@@ -1,0 +1,9 @@
+<<!--- TEMPLATENAME: SFRAResultTemplate.isml --->
+<iscontent type="text/html" charset="UTF-8" compact="true" />
+<!doctype html>
+<head></head>
+<body>
+<h1>Hello World Form Result</h1>
+<p>Nice to meet you, ${pdict.nickname}.</p>
+</body>
+</html>

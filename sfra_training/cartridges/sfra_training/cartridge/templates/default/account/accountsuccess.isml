@@ -1,0 +1,9 @@
+<isdecorate template="common/layout/page">
+    <h3>
+        ${pdict.profileForm.firstName.value} ${pdict.profileForm.lastName.value} ${pdict.profileForm.email.value},
+        Thanks You
+        dear.
+
+    </h3>
+    <h2>back to register page <a href="${pdict.continueUrl}">createaccount</a></h2>
+</isdecorate>
